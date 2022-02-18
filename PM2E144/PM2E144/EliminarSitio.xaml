@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E144.EliminarSitio">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="Id" Text="{Binding Id}" Keyboard="Plain"/>
+            <Entry x:Name="Descrip" Text="{Binding Descripcion}" Keyboard="Plain"/>
+            <Button x:Name="Eliminar" Text="Eliminar" Clicked="Eliminar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

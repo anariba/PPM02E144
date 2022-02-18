@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E144.Inicio">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="foto" WidthRequest="100" HeightRequest="100" BackgroundColor="AliceBlue"/>
+            <Button x:Name="TomarFoto" Text="Tomar Fotografia" Clicked="TomarFoto_Clicked" FontSize="Medium" />
+            <Label Text="Latitud: " FontSize="Medium"/>
+            <Label x:Name="lat"/>
+            <Label Text="Longitud: " FontSize="Medium"/>
+            <Label x:Name="lon"/>
+            <Entry x:Name="Descrip" Placeholder="Descripcion" Keyboard="Plain" MaxLength="100"/>
+            
+            <Grid ColumnDefinitions="*,*">
+
+                <Button x:Name="BtnGuardar" Text="Guardar Sitio" Clicked="BtnGuardar_Clicked" FontSize="Medium"/>
+                <Button Grid.Column="1" x:Name="BtnLista" Text="Lista Sitios" Clicked="BtnLista_Clicked" FontSize="Medium"/>
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
